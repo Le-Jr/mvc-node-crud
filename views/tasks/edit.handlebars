@@ -1,0 +1,13 @@
+<h1>Editando a tarefa {{tasks.title}} </h1>
+<form action="/tasks/edit" method="POST" class="form">
+<input type="hidden" name="id" value="{{tasks.id}}">
+  <div class="form-control">
+    <label for="title" class="labels">Título:</label>
+    <input type="text" name="title" placeholder="O que você vai fazer?" class="texto" value=" {{tasks.title}}">
+  </div>
+  <div class="form-control">
+    <label for="description" class="labels">Descrição:</label>
+    <textarea type="text" name="description" placeholder="O que você vai fazer?" class="texto"> {{tasks.description}} </textarea>
+  </div>
+  <input type="submit" value="Editar" class="button">
+</form>
